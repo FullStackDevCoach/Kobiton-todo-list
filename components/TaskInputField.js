@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
         color: '#fff',
         height: 50,
         flex: 1,
+        fontSize: 14,
     },
     button: {
         height: 30,

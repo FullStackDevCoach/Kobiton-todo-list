@@ -1,12 +1,25 @@
 {
-  "name": "reacttodolistapp",
-  "displayName": "reacttodolistapp",
+  "name": "To-Do List",
+  "displayName": "To-Do List",
   "expo": {
-    "name": "reacttodolistapp",
+    "name": "To-Do List",
     "slug": "reacttodolistapp",
     "version": "1.0.0",
     "assetBundlePatterns": [
       "**/*"
-    ]
+    ],
+    "android": {
+      "package": "com.todolist.app.version1",
+      "versionCode": 4,
+      "userInterfaceStyle": "light",
+      "permissions":[
+      ]
+    },
+    "ios": {
+      "bundleIdentifier": "com.todolist.app.ios.version1",
+      "buildNumber": "4",
+      "supportsTablet": true,
+      "userInterfaceStyle": "light"
+    }
   }
 }
