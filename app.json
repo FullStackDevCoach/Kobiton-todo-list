@@ -10,14 +10,14 @@
     ],
     "android": {
       "package": "com.todolist.app.version1",
-      "versionCode": 4,
+      "versionCode": 6,
       "userInterfaceStyle": "light",
       "permissions":[
       ]
     },
     "ios": {
       "bundleIdentifier": "com.todolist.app.ios.version1",
-      "buildNumber": "4",
+      "buildNumber": "6",
       "supportsTablet": true,
       "userInterfaceStyle": "light"
     }
