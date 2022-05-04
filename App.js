@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
-import { Keyboard, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Keyboard, ScrollView, StyleSheet, Text, View, Image } from 'react-native';
 import TaskInputField from './components/TaskInputField';
 import TaskItem from './components/TaskItem';
+import logo from './assets/logo.png'; 
 
 export default function App() {
   const [tasks, setTasks] = useState([]);
@@ -18,8 +19,12 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-        <Text style={styles.heading}>TODO LIST</Text>
+      <View style={styles.header}>
+          <Text style={styles.heading}>To Do</Text>
+          <Image source={logo} style={styles.logo} />
+      </View>
       <ScrollView style={styles.scrollView}>
+        
         {
         tasks.map((task, index) => {
           return (
@@ -40,6 +45,12 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#1E1A3C',
   },
+  header: {
+    justifyContent: 'space-between',
+    padding: 8,
+    flexDirection:'row',
+    alignItems:'center',
+  },
   heading: {
     color: '#fff',
     fontSize: 20,
@@ -47,6 +58,14 @@ const styles = StyleSheet.create({
     marginTop: 30,
     marginBottom: 10,
     marginLeft: 20,
+  },
+  logo: {
+    width: 30, 
+    height: 30,
+    alignItems: 'flex-end',
+    justifyContent: 'center',
+    marginTop: 15,
+    marginRight: 20,
   },
   scrollView: {
     marginBottom: 70,
