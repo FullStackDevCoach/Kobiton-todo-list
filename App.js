@@ -112,7 +112,7 @@ export default function App() {
         <ScrollView style={styles.scrollView}>
 
           {
-            tasks.map((task, index) => {
+            tasks.reverse().map((task, index) => {
               return (
                   index === 1 ?
                       <View key={index} style={styles.taskContainer}>
